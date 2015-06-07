@@ -7,17 +7,17 @@
   position: fixed;
   top: 0px;
   width: 100%;
-  height: 46px;
+  height: 24px;
   background-color: black;
   z-index: 9999;
 }
 
 .logoLink {
   font-family: museo;
-  font-size: 20pt;
+  font-size: 16pt;
   text-align: center;
-  line-height: 42px;
-  height: 42px;
+  line-height: 20px;
+  height: 20px;
 }
 
 ul.navbar-right {
@@ -30,9 +30,9 @@ ul.navbar-right {
   float: right;
   text-align: center;
   letter-spacing: 2px;
-  line-height: 42px;
+  line-height: 20px;
   /*width: 200px;*/
-  height: 42px;
+  height: 20px;
   /*border*/
 }
 .navbar-right > li:hover > a {
@@ -54,14 +54,15 @@ ul.navbar-right {
 #searchBar {
   /*margin-top: 2px;*/
   width: 150px;
-  height: 20px;
-  vertical-align: text-bottom;
+  height: 16px;
+  vertical-align: text-top;
+  font-size: 14px;
 }
 
 
 .navbar-right > li > a{
   display: block;
   padding: 0px 20px;
-  height: 42px;
+  height: 20px;
 }
 
