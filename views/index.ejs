@@ -23,6 +23,10 @@
 
 
 <script src="js/libs/externalLibs/jquery-2.0.3.js"></script>
+<!-- <script type="text/javascript" src="js/libs/externalLibs/jquery-ui-1.10.0.custom.min"></script> -->
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> -->
 
 <script src="socket.io/socket.io.js"></script>
 <script src="js/libs/myLogic/voInitializer.js"></script>
@@ -71,14 +75,14 @@
 <body>
 <div class='myNav'>
   <a class='logoLink'>CoNote</a>
-  <textarea id='searchBar'></textarea>
+  <textarea placeholder="Search" id='searchBar'></textarea>
   <a class='btn btn-default'><i class='icon-star'></i></a>
 
   <ul class='navbar-right'>
-    <li><a class='toggleSidebar'>Toggle sideBar</a></li>
-    <li><a id="googleButton" href='/auth/google'>Sign In With Google</a></li>
+    <li><a class='toggleSidebar'>More</a></li>
+    <li><a id="googleButton" href='/auth/google'>Sign In</a></li>
     <!-- <li><a id="profileButton"></a></li> -->
-    <li><a id='COMMIT'>Make Commit!</a></li>
+    <li><a id='COMMIT'>Commit</a></li>
     <!-- <li><a><img src='img/undo.png'></a></li>
     <li><a><img src='img/redo.png'></a></li> -->
     <li><a id='markdownButton'>x<sup>2</sup></a></li>
@@ -87,17 +91,17 @@
 
 </div>
 
-<div id='metaSidebar'>
+<div id='metaSidebar' class='panel'>
   <div class='nodeAttributes'>
     <b>Node Attributes</b>
     <br><br>
     <ul>
       <li id='authorLI'>author: you</li>
-      <li id='timestampLI'>timeStamp: now</li>
+      <li id='timestampLI'>timestamp: now</li>
     </ul>
   </div>
   <div class='revHistory'>
-    <a class='getRevHistory'>Get revHistory</a>
+    <a class='getRevHistory'>Fetch revision history</a>
     <ul id='revTimestamps'>
     </ul>
   </div>

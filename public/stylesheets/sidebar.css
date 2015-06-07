@@ -29,7 +29,7 @@
   top: 60px;
   right: 15px;
   width: 200px;
-  background-color: beige; 
+  background-color: white; 
   z-index: 999999;
 }
 
@@ -43,7 +43,7 @@
 
 
 .nodeAttributes{
-  background-color: rgb(147, 213, 202);
+  /*background-color: rgb(147, 213, 202);*/
   width: 100%;
   height: 100px;
 }
@@ -53,17 +53,26 @@
 }
 
 .revHistory{
-  background-color: rgb(48, 127, 189);
+  /*background-color: rgb(48, 127, 189);*/
   width: 100%;
   height: 100px;
 }
 
 .revHistory > a{
-  color: white
+  color: blue;
+  margin: 5px;
+}
+
+.revHistory > ul{
+  list-style-position: inside;
 }
 
 #revTimestamps > li > a{
-  color: white;
+  color: blue;
+}
+
+#revTimestamps > li{
+  padding: 10px;
 }
 
 

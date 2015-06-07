@@ -28,8 +28,10 @@ $(function(){
 
 	$(".toggleSidebar").click(function(){
 		$("#mainPanel").toggleClass("floatRight centering"); 
-		$("#metaSidebar").toggleClass("hideBar"); 
-	}); 
+		// $("#metaSidebar").toggleClass("hideBar"); 
+		$("#metaSidebar").toggle("slide", {direction:'right'}, 400);
+
+	});
 
 	$("#revTimestamps").on("click", "a.timestamp", function(event){
 	// debugger; 

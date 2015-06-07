@@ -11,10 +11,12 @@ body {
 /**************** Panel ****************/
 
 /*revListeners.js , index.ejs*/
+
+/* Same as centering temporarily*/
 .floatRight{
-  float: left;
-  margin-top: 40px;
   width: 760px;
+  margin: auto;
+  margin-top: 40px;
 }
 
 .centering{
