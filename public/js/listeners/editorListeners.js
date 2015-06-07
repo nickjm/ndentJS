@@ -20,16 +20,24 @@ $(function(){
 
 
 	$("body").on("mouseover", "a.expandCollapse", function(event){
-		$(event.target).find("a.expandCollapse").css("opacity", "1"); 
-		$(event.target).closest("a.expandCollapse").css("opacity", "1"); 
+		 showExpandCollapse(event);
 		// $(event.target).siblings("a.expandCollapse").css("opacity", "1")
+		// return false;
 	}); 
 	$("body").on("mouseleave", "a.expandCollapse", function(event){
-		$(event.target).find("a.expandCollapse").css("opacity", ".001"); 
-		$(event.target).closest("a.expandCollapse").css("opacity", ".001"); 
+		hideExpandCollapse(event);
 		// $(event.target).siblings("a.expandCollapse").css("opacity", ".001")
+		// return false;
 	}); 
 
+	var showExpandCollapse = function(event) {
+		$(event.target).find("a.expandCollapse").css("opacity", "1"); 
+		$(event.target).closest("a.expandCollapse").css("opacity", "1");
+	}
+	var hideExpandCollapse = function(event) {
+		$(event.target).find("a.expandCollapse").css("opacity", ".001"); 
+		$(event.target).closest("a.expandCollapse").css("opacity", ".001"); 
+	}
 	
 
 	$("body").on("click", ".expandCollapse", function(event){

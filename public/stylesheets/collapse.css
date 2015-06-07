@@ -9,7 +9,8 @@
   left: -28px;
   top: -2px;
   opacity: 0.001;
-  width: 700px;
+  /*width: 700px;*/
+  /*z-index: 0;*/
 }
   
 ul li a.zoomButton{
